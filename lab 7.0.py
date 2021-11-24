@@ -1,11 +1,12 @@
 from numpy import* 
+import math
 import matplotlib.pyplot as plt 
  
 plt.plot([1, 2, 3, 4]) 
 plt.show() 
  
 def f(t): 
-    return t **2 * exp(-t**2) 
+    return t **2 * math.exp(-t**2) 
 t = linspace(0, 3, 51) 
 y = f(t) 
 plt.plot(t, y) 
@@ -20,9 +21,9 @@ plt.title('My first normal plot')
 plt.legend() 
 plt.show() 
  
-y1 = t**2 * exp(-t**2) 
-y2 = t**4 * exp(-t**2) 
-y3 = t**6 * exp(-t**2) 
+y1 = t**2 * math.exp(-t**2) 
+y2 = t**4 * math.exp(-t**2) 
+y3 = t**6 * math.exp(-t**2) 
 plt.plot(t, y1, 'g^', t, y2, 'b--', t, y3, 'ro-') 
 plt.xlabel('t') 
 plt.ylabel('y') 
