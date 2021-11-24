@@ -32,7 +32,7 @@ plt.legend(['t^2*exp(-t^2)','t^4*exp(-t^2)', 't^6*exp(-t^2)'], loc = 'upper left
 plt.show() 
  
 def f1(t): 
-    return 5 * sin(10 * t) * sin(3 * t) 
+    return 5 * math.sin(10 * t) * math.sin(3 * t) 
 t = linspace(0, 4) 
 y = f1(t) 
  
