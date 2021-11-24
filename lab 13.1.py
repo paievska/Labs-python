@@ -1,10 +1,10 @@
 from scipy import integrate
-
+import math
 from numpy import *
 
 
 def f1(x):
-    return 1 / sqrt(0.5 * x + 1)
+    return 1 / math.sqrt(0.5 * x + 1)
 
 
 def simpson(a, b, n):
