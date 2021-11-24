@@ -21,11 +21,11 @@ def lagranz(x, y, t):
         z = z + y[j] * p1 / p2
     return z
 
-
-t = float(input("enter x:"))
+#Перевірка після вводу х виводить значення у
+t = input("enter x:")
+t=float(t)
 print("x= ", t)
 print("L=", lagranz(x, y, t))
-
 xnew = np.linspace(np.min(x), np.max(x), 100)
 ynew = [lagranz(x, y, i) for i in xnew]
 plt.xlabel('x')  # позначення вісі абсцис
