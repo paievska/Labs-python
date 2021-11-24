@@ -4,7 +4,7 @@ from numpy import *
 
 
 def f1(x):
-    return 1 / sqrt(0.5 * x + 1)
+    return 1 / math.sqrt(0.5 * x + 1)
 
 
 def trap(f1, a, b, n):
