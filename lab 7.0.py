@@ -32,12 +32,12 @@ plt.legend(['t^2*exp(-t^2)','t^4*exp(-t^2)', 't^6*exp(-t^2)'], loc = 'upper left
 plt.show() 
  
 def f1(t): 
-    return 5 * math.sin(10 * t) * math.sin(3 * t) 
+    return 10 * (math.cos(t**2)/(t**2) 
 t = linspace(0, 4) 
 y = f1(t) 
  
 t = linspace(0, 4) 
-plt.plot(t, y, 'g-', label = '5 * sin(10 * x) * sin(3 * x)', color = "pink") 
+plt.plot(t, y, 'g-', label = '10*cos(x^2)/x^2', color = "pink") 
 plt.axis([0, 4, -5, 5])  
 plt.grid() 
 plt.xlabel('t') 
